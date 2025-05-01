@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --main-color: rgb(174, 153, 16);
+    --main-contrast-color: rgb(75, 88, 159);
+    --accent-color: rgb(219, 121, 238);
+    --accent-contrast-color: rgb(66, 5, 69);
+}
+
+
+/* Browser/Display fixes */
+html,
+body {
+    margin: 0;
+}
+
+/* Box sizing fix taken from https://css-tricks.com/almanac/properties/b/box-sizing/ */ 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* These selectors target the HTML elements and will apply to every iteration of those elements */
+body {
+    background-color: var(--main-contrast-color);
+    color: red; /* Defines color using named value */
+    color: #ff0000; /* Defines color using hex code */
+    color: rgb(255, 0, 0); /* Defines color using RGB value */ 
+    color: rgba(255, 0, 0, 0.5);/* Defines color and opacity using RGBA value */
+    color: var(--main-color);
+    
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <100>;
+    font-style: normal;
+}
+
+
+#content-container {
+    background-color: peachpuff;
+    margin: 20px auto;
+    max-width: 1440px;
+    padding: 40px;
+    width: calc(100% - 40px);
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+a {
+    background-color: var(--main-color);
+    color: var(--main-contrast-color);
+}
+
+a:hover {
+    background-color: var(--accent-color);
+    color: var(--accent-contrast-color)
+}
+
+img{
+    max-width: 100%;
+}
+
+.star-divider {
+    width: 100%;
+}
+
+/* These target the value of the class="" property of our HTML elements, referred to as class names. */
+/* You target class names in our CSS by putting a period . before the name of the class. */
+
+.intro {
+    align-content: center;
+    background-blend-mode: multiply;
+    background-color: var(--main-color);
+    background-image: url("../images/pear-wee.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+/* styles for the about section*/
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    text-align: center;
+}
+
+.about-me h2 {
+    flex-basis: 100%;
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+/* Set the width of the image column using flex-basis and the text will automatically take up the rest of the space */
+.about-me .about-image {
+    flex-basis: 30%;
+    flex-grow: 0;
+}
+
+.about-me .about-text {
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 25px;
+    color:rgb(75, 88, 159)
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about h2 {
+    flex-basis: 100%;
+}
+
+.fact {
+    flex-grow: 0;
+    flex-basis: 30%;
+}
+
+/* Targets an element with a class of, "fact" only if it immediately follows (is a direct sibling of) another element that also has a class of, "fact." */
+
+.fact + .fact {
+    margin-top: 30px;
+}
+
+.fact + .fact + .fact {
+    margin-top: 60px;
+}
+
+.note {
+    border-color: var(--main-color);
+    border-style: solid;
+    border-width: 2px;
+    font-size: 14px;
+    padding: 18px;
+}
+
+.special {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+h2.special {
+    text-align: center;
+}
+
+p.special {
+    max-width: none;
+}
+
+.note.special {
+    border-color: green;
+    color: green;
+}
+
+.note.special a {
+    background-color: green;
+    color: white;
+}
+
+.note.special a:hover {
+    background-color: black;
+    color: green;
+}
+
+/* These target the value of the id="" property on our HTML elements. These should be unique and only used once on any given HTML page. */
+/* You target ids in our CSS by putting a hash # before the name of the id. */
+
+#special-note {
+    background-color: var(--main-color);
+    border: none;
+    color: var(--main-contrast-color);
+}
+
+#special-note a {
+    background-color: var(--main-contrast-color);
+    color: var(--main-color);
+}
+
+#special-note a:hover {
+    background-color: var(--accent-color);
+    color: var(--accent-contrast-color);
+}
