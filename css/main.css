@@ -2,7 +2,7 @@
 
 :root {
     --main-color: rgb(174, 153, 16);
-    --main-contrast-color: rgb(75, 88, 159);
+    --main-contrast-color: rgb(69, 115, 141);
     --accent-color: rgb(219, 121, 238);
     --accent-contrast-color: rgb(66, 5, 69);
 }
@@ -36,7 +36,7 @@ body {
 
 
 #content-container {
-    background-color: peachpuff;
+    background-color: whitesmoke;
     margin: 20px auto;
     max-width: 1440px;
     padding: 40px;
