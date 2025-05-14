@@ -107,6 +107,15 @@ img{
     justify-content: space-between;
 }
 
+
+
+.Gallery h2 {
+    flex-basis: 100%;
+    font-size: 60px;
+    margin-top: 0px;
+    text-align: center;
+}
+
 .commission {
     display: flex;
     flex-direction: row;
