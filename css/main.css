@@ -114,11 +114,29 @@ img{
     text-align: center;
 }
 
+.Gallery .featured {
+    flex-basis: 50%;
+    flex-grow: 0;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.Gallery .gallery-image {
+    display: flex;
+    flex-basis: 0;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    flex-grow: 0;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
 .commission {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
     text-align: center;
 }
 
