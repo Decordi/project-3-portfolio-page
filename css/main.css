@@ -115,10 +115,9 @@ img{
 }
 
 .Gallery .featured {
+    display: flex;
     flex-basis: 50%;
     flex-grow: 0;
-    width: 60%;
-    height: auto;
     margin: 0 auto;
 }
 
