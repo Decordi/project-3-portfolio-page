@@ -30,7 +30,7 @@ body {
     
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: <100>;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -71,24 +71,6 @@ img{
 /* These target the value of the class="" property of our HTML elements, referred to as class names. */
 /* You target class names in our CSS by putting a period . before the name of the class. */
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: -50px 0px;
-}
-.header h1 {
-    flex-basis: 100%;
-    font-size: 60px;
-    margin-top: 0px;
-    position: -30%, 0%;
-}
-.header .header-image {
-    flex-basis: 30%;
-    flex-grow: 100%;
-    resize: both 100%;
-}
 
 /* styles for the about section*/
 .about-me {
@@ -129,7 +111,15 @@ img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 24px;
+    text-align: center;
+}
+
+.commission h2 {
+    flex-basis: 100%;
+    font-size: 60px;
+    margin-top: 0px;
+    text-align: center;
 }
 /* EXAMPLE CODE FROM TEACHER  
 .about h2 {
