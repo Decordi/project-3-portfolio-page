@@ -87,6 +87,25 @@ img{
     text-align: center;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: -50px 0px;
+}
+.header h1 {
+    flex-basis: 100%;
+    font-size: 60px;
+    margin-top: 0px;
+    position: -30%, 0%;
+}
+.header .header-image {
+    flex-basis: 30%;
+    flex-grow: 0;
+    position: -70%, -20%;
+}
+
 /* styles for the about section*/
 .about-me {
     display: flex;
@@ -122,6 +141,13 @@ img{
     justify-content: space-between;
 }
 
+.commission {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* EXAMPLE CODE FROM TEACHER  
 .about h2 {
     flex-basis: 100%;
 }
@@ -131,7 +157,7 @@ img{
     flex-basis: 30%;
 }
 
-/* Targets an element with a class of, "fact" only if it immediately follows (is a direct sibling of) another element that also has a class of, "fact." */
+/* Targets an element with a class of, "fact" only if it immediately follows (is a direct sibling of) another element that also has a class of, "fact." 
 
 .fact + .fact {
     margin-top: 30px;
@@ -178,7 +204,7 @@ p.special {
 }
 
 /* These target the value of the id="" property on our HTML elements. These should be unique and only used once on any given HTML page. */
-/* You target ids in our CSS by putting a hash # before the name of the id. */
+/* You target ids in our CSS by putting a hash # before the name of the id. 
 
 #special-note {
     background-color: var(--main-color);
