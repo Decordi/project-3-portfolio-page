@@ -51,12 +51,10 @@ h1 {
 }
 
 a {
-    background-color: var(--main-color);
     color: var(--main-contrast-color);
 }
 
 a:hover {
-    background-color: var(--accent-color);
     color: var(--accent-contrast-color)
 }
 
@@ -127,6 +125,13 @@ img{
 .commission h2 {
     flex-basis: 100%;
     font-size: 60px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.commission h3 {
+    flex-basis: 100%;
+    font-size: 30px;
     margin-top: 0px;
     text-align: center;
 }
