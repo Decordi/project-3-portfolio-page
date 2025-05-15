@@ -58,6 +58,14 @@ a:hover {
     color: var(--accent-contrast-color)
 }
 
+b {
+    color: var(--main-color);
+}
+
+b.hover {
+    color: var(--accent-color);
+}
+
 img{
     max-width: 100%;
 }
