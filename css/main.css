@@ -124,9 +124,8 @@ img{
 
 .Gallery .featured {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 20%;
     flex-grow: 0;
-    margin: 0 auto;
 }
 
 .Gallery .gallery-image {
@@ -137,7 +136,7 @@ img{
     flex-grow: 0;
     justify-content: center;
     justify-content: space-between;
-    
+    margin-top: 24px;
 }
 
 .commission {
