@@ -113,6 +113,13 @@ img{
     justify-content: space-between;
 }
 
+.Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
 
 
 .Gallery h2 {
@@ -124,19 +131,18 @@ img{
 
 .Gallery .featured {
     display: flex;
-    flex-basis: 20%;
-    flex-grow: 0;
+    flex-basis: 70%;
+    flex: flex;
+    margin-bottom: 5%;
 }
 
 .Gallery .gallery-image {
     display: flex;
-    flex-basis: 0;
     flex-direction: row;
     flex-wrap: wrap;  
-    flex-grow: 0;
-    justify-content: center;
-    justify-content: space-between;
-    margin-top: 24px;
+    flex: flex;
+    gap: 15px;
+    
 }
 
 .commission {
@@ -178,4 +184,86 @@ img{
 .socials .star-divider {
     flex-basis: 100%;
     margin: 0 auto;
+}
+
+.headshot .headshot-image {
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.headshot .headshot-text {
+    align-items: column;
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: 25px;
+    color:rgb(75, 88, 159)
+}
+
+.headshot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.halfbody .halfbody-image {
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.halfbody .halfbody-text {
+    align-items: column;
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: 25px;
+    color:rgb(75, 88, 159)
+}
+
+.halfbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.fullbody .fullbody-image {
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.fullbody .fullbody-text {
+    align-items: column;
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: 25px;
+    color:rgb(75, 88, 159)
+}
+
+.fullbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tos .tos-text {
+    align-items: center;
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: 25px;
+    color:rgb(75, 88, 159)
+}
+
+.tos h2 {
+    flex-basis: 100%;
+    font-size: 60px;
+    margin-top: 0px;
+    text-align: center;
 }
